@@ -15,10 +15,10 @@ class Dog:
     def description(self):
         print(f"name of the Dog is {self.name}")
         print(f"age of the dog is {self.age}")
-        return ''
+        
     def get_info(self):
         print(f'coat color of the dog is {self.coat_color}')
-        return ''
+        
 class JackRussellTerrier(Dog):
     def __init__(self,name, age, coat_color,hieght="25-38 cm",mass="6-8 kg",bodylength="46-55cm"):
         super().__init__(name, age, coat_color)
@@ -27,16 +27,16 @@ class JackRussellTerrier(Dog):
         self.bodylength=bodylength
     def lifespan(self,lifeline="Lifespan of this dog breed is 12-16 years"):
         print(lifeline)
-        return ''
+        
     def temprament(self):
         temper="Temprament of this dog breed is Intelligent, Stubbon, Athletic, Energetic, Fearless"
         print(temper)
-        return ''
+        
     def getappearance(self):
         print(f"height of Jack Russell Terrier is {self.hieght}")
         print(f"weight of Jack Russell Terrier is {self.mass}")
         print(f"overall bodylength of Jack Russell  Terrier is {self.bodylength}")
-        return '' 
+         
 
 class Bulldog(Dog):
     def __init__(self,name, age, coat_color,hieght="31-40 cm",mass="23-25 kg",bodylength="51-69 cm"):
@@ -48,25 +48,25 @@ class Bulldog(Dog):
     def lifespan(self):
         lifeline="Lifespan of this dog breed is 8-10 years"
         print(lifeline)
-        return ''
+        
     def temprament(self):
         temper="Temprament of this dog breed is Docile, Friendly, Gregacious"
         print(temper)
-        return ''
+        
     def getappearance(self):
         print(f"height of Bulldog is {self.hieght}")
         print(f"weight of Bulldog is {self.mass}")
         print(f"overall bodylength of Bulldog is {self.bodylength}")
-        return ''
+        
 
 J=JackRussellTerrier("Jackson",5,"White")
-print(J.description())
-print(J.get_info())
-print(J.getappearance())
-print(J.temprament())
+J.description()
+J.get_info()
+J.getappearance()
+J.temprament()
 
 B=Bulldog("Heather", 7, "Brindle & White")
-print(B.description())
-print(B.get_info())
-print(B.getappearance())
-print(B.temprament())
+B.description()
+B.get_info()
+B.getappearance()
+B.temprament()
